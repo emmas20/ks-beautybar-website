@@ -115,8 +115,10 @@ groups.innerHTML = MENU.map(g => `
   tabs.appendChild(b);
 });
 
-document.querySelectorAll('[data-book]').forEach(a => { a.href = link(a.dataset.book); a.target = '_blank'; a.rel = 'noopener'; });
-document.querySelectorAll('.book-any').forEach(a => { a.href = link(); a.target = '_blank'; a.rel = 'noopener'; });
+// Same tab on purpose: Instagram and TikTok in-app browsers (and some
+// phones) silently block links that open a new tab.
+document.querySelectorAll('[data-book]').forEach(a => { a.href = link(a.dataset.book); });
+document.querySelectorAll('.book-any').forEach(a => { a.href = link(); });
 
 document.querySelectorAll('.copy').forEach(b => b.onclick = async () => {
   const el = document.getElementById(b.dataset.copy);
