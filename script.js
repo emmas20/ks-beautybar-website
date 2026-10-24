@@ -1,5 +1,5 @@
 // Karlee's Zoroliq booking link (app.zoroliq.com/book/<her slug>).
-const BOOK_BASE = "https://app.zoroliq.com/book/ks-beautybar";
+const BOOK_BASE = "https://app.zoroliq.com/book/ks-beauty-bar-71e2ab72d513";
 
 // Zoroliq service ids, set by docs/clients/ks-beautybar/seed_ks_beautybar_services.sql
 // in the Zoroliq repo. A Book link with ?service=<id> opens with that service picked.

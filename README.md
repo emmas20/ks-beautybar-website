@@ -5,7 +5,7 @@ Static site (index.html, policy.html, styles.css, script.js, images/) built from
 Preview locally: `python3 -m http.server 4321` in this folder, then open http://localhost:4321.
 
 ## Connected to Zoroliq
-- `BOOK_BASE` (top of script.js): her booking page, `app.zoroliq.com/book/ks-beautybar`. Change it if her slug is different (also in policy.html).
+- `BOOK_BASE` (top of script.js): her booking page, `app.zoroliq.com/book/ks-beauty-bar-71e2ab72d513`. Change it if her slug is different (also in policy.html).
 - `SERVICE_IDS`: fixed service ids created by `docs/clients/ks-beautybar/seed_ks_beautybar_services.sql` in the Zoroliq repo. Keep both in sync. Nail sets link to their Short option; the booking page then makes the client pick a length and nail art.
 
 ## Content from Karlee
