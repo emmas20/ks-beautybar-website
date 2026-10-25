@@ -12,6 +12,7 @@ const SERVICE_IDS = {
   "gel-fill-4-weeks-rebalance": "1aee0120-c4d7-4057-974f-13a070100e7d",
   "gel-polish-only": "b022655f-80f8-4924-b9c8-470ca5979f35",
   "gel-polish-and-removal": "0681e0fd-370c-4419-8763-086200081188",
+  "soak-off": "d509b90c-0082-4de1-a81f-3b8dff7af40d",
   "brow-wax-and-tint": "b8a9f9dd-3c96-4dcc-b5ce-c9f0ac849023",
   "brow-wax": "725ec14b-410b-41a6-97cf-71da14bc5adb",
   "brazilian-wax": "f2139ec7-287a-4018-a222-0a126ca851da",
@@ -49,7 +50,11 @@ const MENU = [
     {slug:"gel-polish-only", name:"Gel polish only", price:"$35", time:"1 hr",
      desc:"A classic gel polish manicure designed for long-lasting wear and a clean, polished finish."},
     {slug:"gel-polish-and-removal", name:"Gel polish and removal", price:"$35", time:"1 hr 15 min",
-     desc:"A classic gel polish manicure, with removal of your current gel polish included. Removal is for gel polish only, not builder gel or hard gel."}
+     desc:"A classic gel polish manicure, with removal of your current gel polish included. Removal is for gel polish only, not builder gel or hard gel.",
+     hints:["Gel polish done by another artist? Add a foreign removal (+$5) when you book."]},
+    {slug:"soak-off", name:"Soak off", price:"$35", time:"40 min",
+     desc:"Removal of builder gel or Gel-X only, with no new set.",
+     hints:["Product done by another artist? Add a foreign removal (+$5) when you book."]}
   ]},
   {cat:"Add-ons", items:[
     {slug:"nail-art", name:"Nail art", price:"Quoted at appointment", time:"15–40 min",
@@ -57,6 +62,8 @@ const MENU = [
      lengths:[["Solid colour","No art","no extra time"],["Minimal","Quoted","+15 min"],["Moderate","Quoted","+25 min"],["Advanced","Quoted","+40 min"]]},
     {slug:"foreign-fill", name:"Foreign fill", price:"+$5", time:"",
      desc:"For a fill on a set done by another nail artist."},
+    {slug:"foreign-removal", name:"Foreign removal", price:"+$5", time:"",
+     desc:"For a soak off or gel polish removal of product done by another nail artist."},
     {slug:"arm-massage", name:"Arm massage", price:"$7.50", time:"10 min",
      desc:"A relaxing add-on to finish your appointment."}
   ]},
